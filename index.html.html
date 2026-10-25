@@ -1,0 +1,897 @@
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+index.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html </span><span class="s2">lang</span><span class="s3">=&quot;en&quot;</span><span class="s0">&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">charset</span><span class="s3">=&quot;utf-8&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;viewport&quot; </span><span class="s2">content</span><span class="s3">=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;description&quot; </span><span class="s2">content</span><span class="s3">=&quot;&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;meta </span><span class="s2">name</span><span class="s3">=&quot;author&quot; </span><span class="s2">content</span><span class="s3">=&quot;&quot; </span><span class="s0">/&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">lynx website</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;style&gt;</span>
+        <span class="s1">body {</span>
+            <span class="s1">margin:4px 20px 8px auto;</span>
+            <span class="s1">max-width:100%;</span>
+            <span class="s1">line-height:1.6;</span>
+            <span class="s1">font-size:18px;</span>
+            <span class="s1">color:#1d1c1e;</span>
+            <span class="s1">padding:0 3%;</span>
+            <span class="s1">background-color:#c9c6ca;</span>
+            <span class="s1">list-style-type:none;</span>
+            <span class="s1">padding-bottom: 100px;</span>
+            <span class="s1">}</span>
+
+        <span class="s1">ul {</span>
+            <span class="s1">list-style-type:none</span>
+            <span class="s1">}</span>
+
+        <span class="s1">.banner_backing {</span>
+            <span class="s1">position: relative;</span>
+            <span class="s1">height: 600px;</span>
+            <span class="s1">margin: 0 10px 0 10px;</span>
+            <span class="s1">background-image:url(&quot;images/header.jpg&quot;);</span>
+            <span class="s1">background-size: 100%;</span>
+            <span class="s1">background-repeat: no-repeat;</span>
+            <span class="s1">background-size: cover;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.bar {</span>
+            <span class="s1">display:none;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.button {</span>
+              <span class="s1">background: none;</span>
+              <span class="s1">border: none;</span>
+              <span class="s1">padding: 0;</span>
+              <span class="s1">text-align: center;</span>
+              <span class="s1">text-decoration: underline;</span>
+              <span class="s1">display: inline-block;</span>
+              <span class="s1">font-size: 16px;</span>
+              <span class="s1">margin: 4px 8px;</span>
+              <span class="s1">cursor: pointer;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.center-block {</span>
+                      <span class="s1">display: block;</span>
+                      <span class="s1">margin-left: auto;</span>
+                      <span class="s1">margin-right: auto;</span>
+                      <span class="s1">max-width: 100%;</span>
+                      <span class="s1">height: auto;</span>
+                       <span class="s1">}</span>
+
+        <span class="s1">.filterbutton {</span>
+              <span class="s1">background-color: #04AA6D;</span>
+              <span class="s1">border: none;</span>
+              <span class="s1">color: white;</span>
+              <span class="s1">padding: 15px 32px;</span>
+              <span class="s1">text-align: center;</span>
+              <span class="s1">text-decoration: none;</span>
+              <span class="s1">display: inline-block;</span>
+              <span class="s1">font-size: 16px;</span>
+              <span class="s1">margin: 4px 2px;</span>
+              <span class="s1">cursor: pointer;</span>
+              <span class="s1">}</span>
+
+
+       <span class="s1">.custom-audio-player {</span>
+            <span class="s1">display: flex;</span>
+            <span class="s1">align-items: center;</span>
+            <span class="s1">gap: 16px;</span>
+            <span class="s1">background: #f9f9f9;</span>
+            <span class="s1">border: 1px solid #e1e1e1;</span>
+            <span class="s1">padding: 12px 16px;</span>
+            <span class="s1">border-radius: 12px;</span>
+            <span class="s1">max-width: 450px;</span>
+            <span class="s1">font-family: inherit;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.play-btn {</span>
+            <span class="s1">background: #111;</span>
+            <span class="s1">color: #fff;</span>
+            <span class="s1">border: none;</span>
+            <span class="s1">width: 40px;</span>
+            <span class="s1">height: 40px;</span>
+            <span class="s1">border-radius: 50%;</span>
+            <span class="s1">cursor: pointer;</span>
+            <span class="s1">display: flex;</span>
+            <span class="s1">align-items: center;</span>
+            <span class="s1">justify-content: center;</span>
+            <span class="s1">font-size: 14px;</span>
+            <span class="s1">transition: background 0.2s;</span>
+            <span class="s1">flex-shrink: 0;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.play-btn:hover {</span>
+            <span class="s1">background: #333;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.track-info {</span>
+            <span class="s1">flex-grow: 1;</span>
+            <span class="s1">min-width: 0; /* Prevents flex items from overflowing */</span>
+            <span class="s1">display: flex;</span>
+            <span class="s1">flex-direction: column;</span>
+            <span class="s1">justify-content: center; /* Vertically aligns the title and progress bar with the play button */</span>
+            <span class="s1">gap: 4px; /* Controls the exact space between the title and progress bar */</span>
+            <span class="s1">min-width: 0;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.track-title {</span>
+            <span class="s1">display: block;</span>
+            <span class="s1">font-size: 20px;</span>
+            <span class="s1">font-weight: 500;</span>
+            <span class="s1">color: #222;</span>
+            <span class="s1">margin: 0; /* Removes default browser paragraph/heading margins */</span>
+            <span class="s1">white-space: nowrap;</span>
+            <span class="s1">overflow: hidden;</span>
+            <span class="s1">text-overflow: ellipsis;</span>
+            <span class="s1">}</span>
+
+            <span class="s1">.progress-container {</span>
+            <span class="s1">background: #ddd;</span>
+            <span class="s1">height: 6px;</span>
+            <span class="s1">min-height: 6px;</span>
+            <span class="s1">display: block;</span>
+            <span class="s1">border-radius: 3px;</span>
+            <span class="s1">cursor: pointer;</span>
+            <span class="s1">position: relative;</span>
+            <span class="s1">overflow: hidden;</span>
+            <span class="s1">width: 100%;</span>
+            <span class="s1">}</span>
+
+        <span class="s1">.progress-bar {</span>
+            <span class="s1">background: #0066cc;</span>
+            <span class="s1">width: 0%;</span>
+            <span class="s1">height: 100%;</span>
+            <span class="s1">transition: width 0.1s linear;</span>
+            <span class="s1">}</span>
+
+        <span class="s1">.time-display {</span>
+            <span class="s1">font-size: 20px;</span>
+            <span class="s1">color: #666;</span>
+            <span class="s1">min-width: 35px;</span>
+            <span class="s1">text-align: right;</span>
+            <span class="s1">flex-shrink: 0;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">summary {</span>
+            <span class="s1">font-weight: bold;</span>
+            <span class="s1">font-size: 24px;</span>
+            <span class="s1">list-style: none;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">summary:hover{</span>
+            <span class="s1">color: #666</span>
+        <span class="s1">}</span>
+
+        <span class="s1">.video-container {</span>
+          <span class="s1">width: 100%;</span>
+          <span class="s1">max-width: 800px;</span>
+          <span class="s1">margin: 0 auto;</span>
+        <span class="s1">}</span>
+
+        <span class="s1">/* Styling the iframe to scale dynamically */</span>
+        <span class="s1">.video-container iframe {</span>
+          <span class="s1">width: 100%;</span>
+          <span class="s1">height: auto;</span>
+          <span class="s1">aspect-ratio: 16 / 9;</span>
+          <span class="s1">display: block;</span>
+        <span class="s1">}</span>
+
+
+
+
+    <span class="s0">&lt;/style&gt;</span>
+    <span class="s0">&lt;script&gt;</span>
+        <span class="s1">document.addEventListener('DOMContentLoaded', () =&gt; {</span>
+              <span class="s1">const players = document.querySelectorAll('.custom-audio-player');</span>
+
+              <span class="s1">players.forEach(player =&gt; {</span>
+                <span class="s1">const audio = player.querySelector('audio');</span>
+                <span class="s1">const playBtn = player.querySelector('.play-btn');</span>
+                <span class="s1">const progressBar = player.querySelector('.progress-bar');</span>
+                <span class="s1">const progressContainer = player.querySelector('.progress-container');</span>
+                <span class="s1">const timeDisplay = player.querySelector('.time-display');</span>
+
+                <span class="s1">if (!audio || !playBtn) return;</span>
+
+                <span class="s1">// Play/Pause toggle</span>
+                <span class="s1">playBtn.addEventListener('click', () =&gt; {</span>
+                  <span class="s1">if (audio.paused) {</span>
+                    <span class="s1">// Optional: Pause all other playing audio elements on the page</span>
+                    <span class="s1">document.querySelectorAll('audio').forEach(a =&gt; {</span>
+                      <span class="s1">if (a !== audio) {</span>
+                        <span class="s1">a.pause();</span>
+                        <span class="s1">const otherBtn = document.querySelector(`[data-target=&quot;${a.id}&quot;]`);</span>
+                        <span class="s1">if (otherBtn) otherBtn.textContent = '▶';</span>
+                      <span class="s1">}</span>
+                    <span class="s1">});</span>
+
+                    <span class="s1">audio.play().catch(error =&gt; console.error(&quot;Playback failed:&quot;, error));</span>
+                    <span class="s1">playBtn.textContent = '❚❚';</span>
+                  <span class="s1">} else {</span>
+                    <span class="s1">audio.pause();</span>
+                    <span class="s1">playBtn.textContent = '▶';</span>
+                  <span class="s1">}</span>
+                <span class="s1">});</span>
+
+                <span class="s1">// Update progress bar and time display</span>
+                <span class="s1">audio.addEventListener('timeupdate', () =&gt; {</span>
+                  <span class="s1">if (isNaN(audio.duration)) return;</span>
+                  <span class="s1">const percentage = (audio.currentTime / audio.duration) * 100;</span>
+                  <span class="s1">progressBar.style.width = `${percentage}%`;</span>
+
+                  <span class="s1">const minutes = Math.floor(audio.currentTime / 60);</span>
+                  <span class="s1">const seconds = Math.floor(audio.currentTime % 60);</span>
+                  <span class="s1">timeDisplay.textContent = `${minutes}:${seconds &lt; 10 ? '0' : ''}${seconds}`;</span>
+                <span class="s1">});</span>
+
+                <span class="s1">// Click on progress bar to seek</span>
+                <span class="s1">progressContainer.addEventListener('click', (e) =&gt; {</span>
+                  <span class="s1">if (isNaN(audio.duration)) return;</span>
+                  <span class="s1">const width = progressContainer.clientWidth;</span>
+                  <span class="s1">const clickX = e.offsetX;</span>
+                  <span class="s1">audio.currentTime = (clickX / width) * audio.duration;</span>
+                <span class="s1">});</span>
+
+                <span class="s1">// Reset play button when audio ends</span>
+                <span class="s1">audio.addEventListener('ended', () =&gt; {</span>
+                  <span class="s1">playBtn.textContent = '▶';</span>
+                  <span class="s1">progressBar.style.width = '0%';</span>
+                <span class="s1">});</span>
+              <span class="s1">});</span>
+            <span class="s1">});</span>
+
+         <span class="s1">function showSlot(num) {</span>
+                 <span class="s1">if (num == 1) {</span>
+                     <span class="s1">document.getElementById('portfolio').style.display = 'initial';</span>
+                     <span class="s1">document.getElementById('jugger').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('animals').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('writing').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('music').style.display = 'none';</span>
+                 <span class="s1">} else if (num == 2) {</span>
+                     <span class="s1">document.getElementById('portfolio').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('jugger').style.display = 'initial';</span>
+                     <span class="s1">document.getElementById('animals').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('writing').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('music').style.display = 'none';</span>
+
+                 <span class="s1">} else if (num == 3) {</span>
+                     <span class="s1">document.getElementById('portfolio').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('jugger').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('animals').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('writing').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('music').style.display = 'initial';</span>
+                 <span class="s1">} else if (num == 4) {</span>
+                     <span class="s1">document.getElementById('animals').style.display = 'initial';</span>
+                     <span class="s1">document.getElementById('jugger').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('portfolio').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('writing').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('music').style.display = 'none';</span>
+                 <span class="s1">} else if (num == 5) {</span>
+                     <span class="s1">document.getElementById('animals').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('jugger').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('portfolio').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('writing').style.display = 'initial';</span>
+                     <span class="s1">document.getElementById('music').style.display = 'none';</span>
+                 <span class="s1">} else {</span>
+                     <span class="s1">document.getElementById('animals').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('jugger').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('portfolio').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('writing').style.display = 'none';</span>
+                     <span class="s1">document.getElementById('music').style.display = 'none';</span>
+         <span class="s1">}</span>
+
+       <span class="s1">}</span>
+    <span class="s0">&lt;/script&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;header&quot;</span><span class="s0">&gt;    </span><span class="s1">taino yoshua marotto spain </span><span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;banner_backing&quot;</span><span class="s0">&gt; &lt;/div&gt;</span>
+<span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">=&quot;buttons&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;button&quot; </span><span class="s2">onclick</span><span class="s3">=&quot;showSlot(1)&quot;</span><span class="s0">&gt; </span><span class="s1">portfolio </span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;button&quot; </span><span class="s2">onclick</span><span class="s3">=&quot;showSlot(2)&quot;</span><span class="s0">&gt; </span><span class="s1">jugger </span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;button&quot; </span><span class="s2">onclick</span><span class="s3">=&quot;showSlot(3)&quot;</span><span class="s0">&gt; </span><span class="s1">music </span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;button&quot; </span><span class="s2">onclick</span><span class="s3">=&quot;showSlot(4)&quot;</span><span class="s0">&gt; </span><span class="s1">animals </span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;button&quot; </span><span class="s2">onclick</span><span class="s3">=&quot;showSlot(5)&quot;</span><span class="s0">&gt; </span><span class="s1">writing </span><span class="s0">&lt;/button&gt;</span>
+    <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;button&quot; </span><span class="s2">onclick</span><span class="s3">=&quot;showSlot()&quot;</span><span class="s0">&gt; </span><span class="s1">hide all </span><span class="s0">&lt;/button&gt;</span>
+
+<span class="s0">&lt;/div&gt;</span>
+
+
+
+<span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;portfolio&quot; </span><span class="s2">class</span><span class="s3">=&quot;bar&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h1&gt; </span><span class="s1">portfolio </span><span class="s0">&lt;/h1&gt;</span>
+    <span class="s0">&lt;h3&gt; </span><span class="s1">please click on images for links to material. </span><span class="s0">&lt;/h3&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">id </span><span class="s3">=&quot;filterbuttons&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;ul&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">Jugger at Berkeley + California Jugger Association </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">President of both the Berkeley Jugger Club and the California-Wide association.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">More information available on the respective tab, but an overall focus on management on both short-scale 150+ person</span>
+            <span class="s1">events alongside long term organization sustainability.  </span><span class="s0">&lt;p/&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">Lysistrata </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">January 2025 - March 2025 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">Worked as assistant sound designer to Ray Archie on a TDPS production of Lysistrata.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">Worked on composing music for the show, alongside cue organization in QLab, and running mixing and volume levels for all dress rehearsals.</span>
+                <span class="s1">Additionally did work with the Lead Sound Designer helping organize recording spaces and microphone setups.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">The overall vision of the performance was a feminist futuristic depiction of the play taking place in a nightclub. A majority of the sound design was focused</span>
+                <span class="s1">around futuristic nightclub music for heightened moments of action. I wrote 4 pieces for the performance.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">The most significant skills I took from this project were;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Working on sound design in a professional setting and how the workflow develops.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Learning directly under professional sound designers and understanding how to work in this enviroment.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Running mastering and mixing of audio for a physical space.</span>
+                <span class="s0">&lt;br&gt;</span>
+
+            <span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">Macbeth </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">January 2025 - March 2025 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;pr&gt; </span><span class="s1">Worked as lead sound designer to Barestage's Production of 'Macbeth'. Worked with a team of 2 assistant sound designers.</span>
+            <span class="s0">&lt;br&gt;</span>
+                <span class="s1">Taught the assistant sound designers how to build soundscapes in Audacity, run QLab, and work mastering of the sound in the recording space.</span>
+                <span class="s1">Organized the central vision of the audio would function throughout the performance and built complex soundscapes and music for the</span>
+                <span class="s1">play. Set up cue system.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">The overall vision of the performance was to capture an expressionist depiction of Macbeth. I predominantly worked on the soundscapes for the Witch</span>
+                <span class="s1">scenes and the 'madness' focuses of the play. I wanted to use geiger counters and various LFO-heavy synths at the time to evoke continual feelings</span>
+                <span class="s1">of spiralling and desperation.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">The most significant skills I took from this project were;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Learning how to spearhead management of sound design on a wider project.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Quickly familiarising myself to the equipment and hardware setup of a given theatre or space and being able to navigate it efficiently.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- How to teach being a sound designer to people less familar with the domain. Assigning work to assistants without overwhelming them and having</span>
+                <span class="s1">them support a wider vision of the audio.</span>
+                <span class="s0">&lt;br&gt;</span>
+
+            <span class="s0">&lt;/pr&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">STINKJAW: PART ONE </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">September 2024 - December 2024 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://sites.google.com/view/stinkjaw/home&quot; </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt; &lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/stinkjaw.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;STINKJAW cover&quot; </span><span class="s2">width</span><span class="s3">=&quot;80%&quot; </span><span class="s2">height</span><span class="s3">=&quot;3%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot; </span><span class="s0">&gt; &lt;/a&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">Written, Directed, and Produced a two-act play titled 'STINKJAW: PART ONE'. Organized and recruited five actors, an admin team, social media team, a puppet design team,</span>
+                <span class="s1">assistant directors, choreographers, and costume team, and ran the performance from initial rehearsals to two nights of performance, with around 200 people attending across the two nights, alongside ~$200 of profit from a merch stand.</span>
+                <span class="s1">I also wrote a series of short songs and organized occasional sound effects for the performance.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">The play was centrally about a small community in rural upstate New York, and a group of monsters that prey on the families. I wanted to capture how the different</span>
+                <span class="s1">characters tried to make sense of a world that did not provide a clear meaning.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">Later subtitled and edited the entire performance online.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">The most significant skills I took from this project were;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Learning to work with other people. All previous projects were predominantly solo work or had me directly at the helm. Delegating work to a large group of people to help achieve the scale of this project was a sharp learning curve.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Learning to run consistent social media campaigns and advertising + on-campus flyering.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">- Project improvisation. Learning to adapt to physical, financial, and social constraints to see a project through to completion.</span>
+
+            <span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">Parasite Words </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">September 2024 - October 2024 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">Worked as the lead sound technician for a student workshop. Performed live music onstage for the 40 minute performance runtime.</span>
+            <span class="s0">&lt;br&gt;</span>
+                <span class="s1">Performed with an Ableton Push 3 and Keyboard hooked up to my computer. Worked with the director to build an ever-changing soundscape to</span>
+                <span class="s1">accompany the piece.</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s1">Was given different instructions and tasks for each scene. Settled on a group of synths with a couple dozen parameters hooked up to change</span>
+                <span class="s1">the intensity, tone and intention of a scene dynamically. Continually performed throughout the piece onstage.</span>
+
+            <span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">Horsetail </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">July 2024 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://open.spotify.com/episode/3qo7XpJFvn0HQwEOiYn0OH?si=8b6dbc40aa284be5&quot; </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt; &lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/horsetail.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Horsetail cover&quot; </span><span class="s2">width</span><span class="s3">=&quot;40%&quot; </span><span class="s2">height</span><span class="s3">=&quot;1%&quot;  </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot;</span><span class="s0">&gt; &lt;/a&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">Podcast recorded through The Daily Californian. Interviewed a botanist at the UCB Bontanical Gardens and accompanied with music. </span><span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">THE STAR DRIVEN EXPULSION OF COUNT LASTNAME </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">January 2024 - May 2024 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://open.spotify.com/show/2jn6VG5PT4YoEsPm2Osjey?si=0b35e9bc4ad045da&quot; </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt; &lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/starlogo.png&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Star Driven Expulsion cover&quot; </span><span class="s2">width</span><span class="s3">=&quot;40%&quot; </span><span class="s2">height</span><span class="s3">=&quot;1%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot;</span><span class="s0">&gt; &lt;/a&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">A two part audio drama written and directed by Taino Marotto Spain. Wrote the ~10,000 page script and</span>
+                <span class="s1">4/5 different songs of differing genres. Produced and edited in Audacity + FL Studio. Worked with a dozen actors, and 2 other musicians.</span>
+           <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+                <span class="s1">The audio drama was focused on a Las Vegas casino during the end of the world, and a grifter who learns to want to keep living. I wanted to make something fun and action-focused,</span>
+                <span class="s1">and learn how to score music to action.</span>
+            <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+            <span class="s1">The most significant skills I took from this project were;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Composing music and audio for action scenes and understanding how to sync action to sound. See this link for elaboration on how I split up the scenes into choreograpble diagrams.</span>
+                <span class="s0">&lt;link </span><span class="s2">href</span><span class="s3">=&quot;https://docs.google.com/spreadsheets/d/1XXihAxL5fWGRV6eoqsgR_gS8ZRd9VLMq/edit?gid=1916607483#gid=1916607483&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Organizing musicians and actors towards working at a common goal.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Heavy understanding of how sound and music apply context to a scene and how this can be used for dramatic effect.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Setting a long-term project to a strict timeline and achieving significant milestones in a timely manner.</span>
+            <span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">I Don't! I Don't! I Don't Hate It! I Don't Hate It! </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">March 2023 - July 2023 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://open.spotify.com/album/7AmIGaWtohDSoaUvc0588v?si=ncPjYU2lQkm0yOsqRk3H3w&quot; </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt; &lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/albumcover.jpg&quot; </span><span class="s2">width</span><span class="s3">=&quot;50%&quot; </span><span class="s2">height</span><span class="s3">=&quot;1%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot;</span><span class="s0">&gt; &lt;/a&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">EP written at 17. Piano and Singing. Recording done with Brighton College. I had very little musical experience at the time and this was my first major foray into working with music. </span><span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+        <span class="s0">&lt;li&gt;</span>
+            <span class="s0">&lt;h2&gt; </span><span class="s1">The Railway </span><span class="s0">&lt;/h2&gt;</span>
+            <span class="s0">&lt;h3&gt; </span><span class="s1">March 2022 - December 2022 </span><span class="s0">&lt;/h3&gt;</span>
+            <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://open.spotify.com/show/6fhukiZhdGj56rwWjion6u?si=ea1cfc263e9143e8&quot; </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt; &lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/railway.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Railway cover&quot; </span><span class="s2">width</span><span class="s3">=&quot;50%&quot; </span><span class="s2">height</span><span class="s3">=&quot;0.5%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot;</span><span class="s0">&gt; &lt;/a&gt;</span>
+            <span class="s0">&lt;p&gt; </span><span class="s1">Audio Drama written for my EPQ project at Brighton College. First major time working with audacity, and audio-based mediums in general. Worked with 3 other actors.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">The audio drama was about a soldier who discovered a railway that keeps going forever. It was about how running away from something is not the same as getting over it.</span>
+            <span class="s1">I wanted to understand how to balance narrative and descriptive scenes alongside dialogue-heavy scenes in an audio format, and how different styles</span>
+                <span class="s1">could convey different meanings to an audience.</span>
+            <span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;hr&gt;</span>
+        <span class="s0">&lt;/li&gt;</span>
+    <span class="s0">&lt;/ul&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+
+<span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;jugger&quot; </span><span class="s2">class</span><span class="s3">=&quot;bar&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h2&gt; </span><span class="s1">jugger </span><span class="s0">&lt;/h2&gt;</span>
+
+    <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/dryheat2.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Juggercover&quot; </span><span class="s2">width</span><span class="s3">=&quot;50%&quot; </span><span class="s2">height </span><span class="s3">= &quot;0.5%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;br&gt;</span>
+    <span class="s0">&lt;p&gt; </span><span class="s1">Jugger is a five-a-side team sport originating in Germany based around using pompfen (foam weaponry) to score a ball into the opponents goal. </span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;p&gt; </span><span class="s1">I started playing in late 2023 and have been heavily ingrained in the sport both nationally and internationally since. </span><span class="s0">&lt;/p&gt;</span>
+
+    <span class="s0">&lt;details&gt;</span>
+    <span class="s0">&lt;summary </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot;</span><span class="s0">&gt; </span><span class="s1">Organization Leadership </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://jugger.studentorg.berkeley.edu/&quot; </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt; &lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/jablogo.png&quot; </span><span class="s2">alt</span><span class="s3">=&quot;JAB logo&quot; </span><span class="s2">width</span><span class="s3">=&quot;40%&quot; </span><span class="s2">height</span><span class="s3">=&quot;1%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot; </span><span class="s0">&gt; &lt;/a&gt;</span>
+<span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">Current president of Jugger at Berkeley as of May 2025.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">Jugger at Berkeley is a UC Berkeley sponsored club that facilitates the sport of Jugger on campus.</span>
+            <span class="s1">It is currently one of the largest of its kind in the world, with between 25-35 people attending practices weekly.</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s1">- Run weekly admin meetings with 7-12 other officers. Lead conversation and keep meetings on schedule.</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s1">- Ran 3+ events a week for anywhere between 5 and 30 people, facilitating playing the sport and running warmups and</span>
+            <span class="s1">drills, providing supplies, delegating people to run parts of practice, and keeping events on schedule.</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s1">- Help with problem-solving and making ends meet in the club, not limited to but including; organizing and helping new equipment be built,</span>
+        <span class="s1">support and send financial reimbursement requests, spearhead multiple week recruitment campaigns, write club documentation and database infastructure,</span>
+        <span class="s1">and organizing travel to and from national and international tournaments (see more under Team Leadership.)</span>
+<span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;a </span><span class="s2">href</span><span class="s3">=&quot;https://californiajugger.org/&quot; </span><span class="s2">target</span><span class="s3">=&quot;_blank&quot;</span><span class="s0">&gt; &lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/cajalogo.png&quot; </span><span class="s2">alt</span><span class="s3">=&quot;CAJA logo&quot; </span><span class="s2">width</span><span class="s3">=&quot;40%&quot; </span><span class="s2">height</span><span class="s3">=&quot;1%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot; </span><span class="s0">&gt; &lt;/a&gt;</span>
+    <span class="s0">&lt;p&gt; </span><span class="s1">Current president of the California Jugger Association (CAJA) as of June 2025.</span>
+    <span class="s0">&lt;br&gt;</span>
+        <span class="s1">CAJA is the managing body that the 8 jugger clubs in California function under. It runs Californian tournaments and</span>
+        <span class="s1">our monthly league, alongside dealing with conduct cases, finances for large-scale equipment orders, and outreach.</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s1">- Helped organize the infastructure behind the various roles around voting, volunteer work, and club recognition.</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s1">- Helped mantain the organization meeting the work expected and accomplished as mentioned above through</span>
+        <span class="s1">enforcement of deadlines and setting up plans to work forward.</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s1">- Currently helping make the transition to turn the organization into a 501(c) nonprofit.</span>
+    <span class="s0">&lt;/p&gt;</span>
+
+    <span class="s0">&lt;/details&gt;</span>
+
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">Tournament Management </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">Have currently organized three tournaments; Fog of War 2025, Fog of War 2026, and High Seas Open 2026. Two in the Bay Area and one at Long Beach.</span>
+        <span class="s0">&lt;br&gt; </span><span class="s1">These are two day long events that host from roughly 8am-6pm each day, with 100-160 people in attendance.</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">Working with these tournaments has included;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Building brackets and seeding for up to 20 teams to play 11-12 games over a two day tournament.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Organizing schedules for games, breaks and side events, and helping keep events run on time.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Equipment management for up to 5 fields worth of events, sourcing, transporting and organzing.</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s1">- Spreading information on rules, equipment requirements, logistics, signups, etc. In a timely and presentable manner.</span>
+        <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">Team Leadership and Competition </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt;</span>
+            <span class="s1">As of October 2026, I have been to 18 tournaments (9 unique locations), and captained for 8 of them.</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">I have travelled to almost all of them with Berkeley's flagship team, Ursae Majoris, and frequently work out</span>
+           <span class="s1">the logistics for getting to events.</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">This includes;</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">- Finding the cheapest flights to get to events, and booking airbnbs to host the club.</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">- Encouraging players to come to tournaments and supporting them logistically to travel to events.</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">- Hosting pre-tournament discussions and expectation meetings to help a team be prepared for the event.</span>
+            <span class="s0">&lt;br&gt; </span><span class="s1">- Running logistics day-of, such as having people leave locations at a timely manner, be on track of event schedule,</span>
+            <span class="s1">tranporting people and equipment, debriefing and checking in during events, and organizing strategy within games.</span>
+        <span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+
+<span class="s0">&lt;/div&gt;</span>
+
+<span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;music&quot; </span><span class="s2">class</span><span class="s3">=&quot;bar&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h2&gt; </span><span class="s1">music </span><span class="s0">&lt;/h2&gt;</span>
+
+
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">Count Lastname </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">A collation of songs I did for my audio drama in 2024.</span>
+            <span class="s1">Some songs were recorded live, and some were produced entirely in DAWs. </span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background:#C9731B&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;count1&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/CNTcasino.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">99% of Grifters...  </span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;progress-container&quot; </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;progress-bar&quot; </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;count1&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">▶</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">id</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background:#D4A301&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;count2&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/CNTbossa.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot;</span><span class="s0">&gt; </span><span class="s1">The Bum from Winnemucca, NV  </span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;count2&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">▶</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background:#1E6678&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;count3&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/CNTfinale.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Finale Song  </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;count3&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background:#120D55&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;count4&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/CNTtango.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Of Which It Takes Two </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;count4&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">STINKJAW </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">Songs written for scene transitions. </span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #5B0200&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;jaw2&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/jaw2.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">HOMECOMING </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;jaw2&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #664F3E&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;jaw3&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/jaw3.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">THE MAN IN THE RADIO </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;jaw3&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #9C6B2B&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;jaw4&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/jaw4.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">AND TIME WON'T WAIT FOR THE LAME OR THE DOGS </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;jaw4&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #703F00&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;jaw5&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/jaw5.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">WHERE IS MY FATHER </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;jaw5&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">Macbeth </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">A sample of various soundscapes I worked on that played in the background of various scenes. </span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #616161&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;mac1&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/mac1.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Opening Witch Soundscape </span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;mac1&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">▶</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #616161&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;mac2&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/mac2.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Banquet </span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;mac2&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">▶</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #616161&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;mac3&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/mac3.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Banquet Warped </span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;mac3&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">▶</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #2E2E2E&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;mac4&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/mac4.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Later Witch Soundscape </span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;mac4&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">▶</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #A3A3A3&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;mac5&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/mac5.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Macbeth / Macduff Fight </span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;mac5&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+            <span class="s1">▶</span>
+        <span class="s0">&lt;/button&gt;</span>
+        <span class="s0">&lt;br&gt;</span>
+        <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">Lysistrata </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">A short collection of songs written for Lysistrata. </span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #5618A8&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;lys1&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/LYSlloyd.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">LLoyds Lament 2 </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;lys1&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #3D0585&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;lys2&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/LYSswag.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">XJ Swagger </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;lys2&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">Untitled French Musical </span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">A series of songs I did for a director who wanted to draft a musical about the French Revolution. </span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #850000&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;oui1&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/OUIopen.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Livre de Jeunesse </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;oui1&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #A81818&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;oui2&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/OUImodern.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Modern Age (Draft Vocals) </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;oui2&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #E84343&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;oui3&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/OUIestates.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">The Third Estate Shuffle </span><span class="s0">&lt;/span&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+            <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;oui3&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                <span class="s1">▶</span>
+            <span class="s0">&lt;/button&gt;</span>
+            <span class="s0">&lt;br&gt;</span>
+            <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+    <span class="s0">&lt;details&gt;</span>
+        <span class="s0">&lt;summary&gt; </span><span class="s1">Amalia's Space Project</span><span class="s0">&lt;/summary&gt;</span>
+        <span class="s0">&lt;p&gt; </span><span class="s1">A song and montage I made for a friend who was making a short play about a family in space looking to return to Earth. </span><span class="s0">&lt;/p&gt;</span>
+            <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;custom-audio-player&quot; </span><span class="s2">style</span><span class="s3">=&quot;background: #0212C7&quot;</span><span class="s0">&gt;</span>
+                <span class="s0">&lt;audio </span><span class="s2">id</span><span class="s3">=&quot;FSH1&quot; </span><span class="s2">src</span><span class="s3">=&quot;../audio/FSHfull.mp3&quot; </span><span class="s2">preload</span><span class="s3">=&quot;metadata&quot;</span><span class="s0">&gt;&lt;/audio&gt;</span>
+                <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;track-info&quot;</span><span class="s0">&gt;</span>
+                    <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;track-title&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt; </span><span class="s1">Space Song </span><span class="s0">&lt;/span&gt;</span>
+                    <span class="s0">&lt;br&gt;</span>
+                    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;progress-container&quot;</span><span class="s0">&gt;</span>
+                        <span class="s0">&lt;div  </span><span class="s2">class</span><span class="s3">=&quot;progress-bar&quot;</span><span class="s0">&gt;&lt;/div&gt;</span>
+                    <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;/div&gt;</span>
+                <span class="s0">&lt;button </span><span class="s2">class</span><span class="s3">=&quot;play-btn&quot; </span><span class="s2">data-target</span><span class="s3">=&quot;oui3&quot; </span><span class="s2">aria-label</span><span class="s3">=&quot;Play&quot;</span><span class="s0">&gt;</span>
+                    <span class="s1">▶</span>
+                <span class="s0">&lt;/button&gt;</span>
+                <span class="s0">&lt;br&gt;</span>
+                <span class="s0">&lt;span </span><span class="s2">class</span><span class="s3">=&quot;time-display&quot; </span><span class="s2">style</span><span class="s3">=&quot;color:#FFFFFF&quot;</span><span class="s0">&gt;</span><span class="s1">0:00</span><span class="s0">&lt;/span&gt;</span>
+            <span class="s0">&lt;/div&gt;</span>
+        <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;/details&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+
+<span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;animals&quot; </span><span class="s2">class</span><span class="s3">=&quot;bar&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h2&gt; </span><span class="s1">animals </span><span class="s0">&lt;/h2&gt;</span>
+    <span class="s0">&lt;img </span><span class="s2">src</span><span class="s3">=&quot;../images/Pig1.jpg&quot; </span><span class="s2">alt</span><span class="s3">=&quot;Portrait of the artist as a young pig&quot; </span><span class="s2">width</span><span class="s3">=&quot;40%&quot; </span><span class="s2">height</span><span class="s3">=&quot;1%&quot; </span><span class="s2">class</span><span class="s3">=&quot;center-block&quot; </span><span class="s0">&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+
+<span class="s0">&lt;div </span><span class="s2">id</span><span class="s3">=&quot;writing&quot; </span><span class="s2">class</span><span class="s3">=&quot;bar&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;h2&gt; </span><span class="s1">writing </span><span class="s0">&lt;/h2&gt;</span>
+    <span class="s0">&lt;li&gt; &lt;/li&gt;</span>
+<span class="s0">&lt;/div&gt;</span>
+
+<span class="s0">&lt;/body&gt;</span>
+</pre>
+</body>
+</html>
